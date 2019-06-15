@@ -1,0 +1,13 @@
+body {
+  padding:1em;
+  color:#333;
+  background-color:#efefef;
+  display:flex;
+  justify-content: center;
+  text-align:center;
+  flex-direction: column;
+}
+
+img {
+  max-width:80%;
+}
