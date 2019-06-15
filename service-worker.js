@@ -1,17 +1,6 @@
-var CACHE_NAME = 'john-snow-cache-v1';
-var urlsToCache = [
-  '/',
-  '/style.css',
-  '/jon.png'
-];
+importScripts('https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js');
 
-self.addEventListener('install', function(event) {
-  // Perform install steps
-  event.waitUntil(
-    caches.open(CACHE_NAME)
-      .then(function(cache) {
-        console.log('Opened cache');
-        return cache.addAll(urlsToCache);
-      })
-  );
-});
+workbox.precaching.precacheAndRoute([
+  '/',
+  '/style.css'
+]);
