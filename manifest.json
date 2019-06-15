@@ -1,0 +1,13 @@
+{
+  "name": "PWA Demo",
+  "short_name": "PWA Demo",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#fff",
+  "description": "A demonstration of how to build a PWA.",
+  "icons": [{
+    "src": "jon.png",
+    "sizes": "512x512",
+    "type": "image/png"
+  }]
+}
