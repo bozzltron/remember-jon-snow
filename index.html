@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>John Snow</title>
+    <title>Jon Snow</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="/style.css">
     <link rel="manifest" href="/manifest.json">
@@ -9,8 +9,13 @@
   <body>
 
     <div><img src="jon.png" /></div>
-    <h2>Winter is coming!<h2>
+    <h2>Remeber Jon Snow. Winter is coming!<h2>
+
     <script type="text/javascript">
+
+      var clips = ['careful.wav', 'defend_self.wav', 'deliver_baby.wav', 'risk_lives.wav'];
+      var index = 0;
+
       if ('serviceWorker' in navigator) {
         window.addEventListener('load', function() {
           navigator.serviceWorker.register('/service-worker.js').then(function(registration) {
@@ -22,6 +27,15 @@
           });
         });
       }
+
+      window.onload = function(){
+        document.querySelector("img").onclick = function(){
+          var audio = new Audio("/audio/" + clips[index]);
+          audio.play();
+          index++;
+        }
+      }
     </script>
+
   </body>
 </html>
