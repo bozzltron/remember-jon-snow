@@ -4,8 +4,8 @@ workbox.precaching.precacheAndRoute([
   '/',
   '/style.css',
   '/jon.png',
-  '/audio/careful.wav', 
-  '/audio/defend_self.wav', 
-  '/audio/deliver_baby.wav', 
-  '/audio/risk_lives.wav'
+  '/audio/careful.mp3', 
+  '/audio/defend_self.mp3', 
+  '/audio/deliver_baby.mp3', 
+  '/audio/risk_lives.mp3'
 ]);
