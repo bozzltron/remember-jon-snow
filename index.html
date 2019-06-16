@@ -8,7 +8,7 @@
   </head>
   <body>
 
-    <div><img src="jon.png" /></div>
+    <div><img src="jon512x512.png" /></div>
     <h2>Remember Jon Snow</h2>
 
     <script type="text/javascript">
@@ -19,10 +19,8 @@
       if ('serviceWorker' in navigator) {
         window.addEventListener('load', function() {
           navigator.serviceWorker.register('/service-worker.js').then(function(registration) {
-            // Registration was successful
             console.log('ServiceWorker registration successful with scope: ', registration.scope);
           }, function(err) {
-            // registration failed :(
             console.log('ServiceWorker registration failed: ', err);
           });
         });

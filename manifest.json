@@ -6,9 +6,16 @@
   "background_color": "#efefef",
   "theme_color" : "#efefef",
   "description": "Remember Jon Snow",
-  "icons": [{
-    "src": "jon.png",
-    "sizes": "512x512",
-    "type": "image/png"
-  }]
+  "icons": [
+    {
+      "src": "jon512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "jon192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
 }

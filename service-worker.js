@@ -3,7 +3,8 @@ importScripts('https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox
 workbox.precaching.precacheAndRoute([
   '/',
   '/style.css',
-  '/jon.png',
+  '/jon512x512.png',
+  '/jon192x192.png',
   '/audio/careful.mp3', 
   '/audio/defend_self.mp3', 
   '/audio/deliver_baby.mp3', 
