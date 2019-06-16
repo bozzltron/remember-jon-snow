@@ -9,3 +9,13 @@ workbox.precaching.precacheAndRoute([
   '/audio/deliver_baby.mp3', 
   '/audio/risk_lives.mp3'
 ]);
+
+workbox.routing.registerRoute(
+  '/',
+  new workbox.strategies.StaleWhileRevalidate()
+);
+
+workbox.routing.registerRoute(
+  /\.(?:png|mp3|css)$/,
+  new workbox.strategies.StaleWhileRevalidate()
+);
