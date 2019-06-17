@@ -11,10 +11,11 @@ workbox.precaching.precacheAndRoute([
 
 workbox.routing.registerRoute(
   '/',
-  new workbox.strategies.StaleWhileRevalidate()
+  new workbox.strategies.NetworkFirst()
 );
 
 workbox.routing.registerRoute(
-  /\.(?:png|mp3|css)$/,
+  /\.(?:png|css|ico)$/,
   new workbox.strategies.StaleWhileRevalidate()
 );
+
