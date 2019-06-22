@@ -1,0 +1,14 @@
+{
+  "name": "pwa",
+  "version": "1.0.0",
+  "description": "A simple pwa example",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Michael Bosworth",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
