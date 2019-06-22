@@ -10,4 +10,16 @@ body {
 
 img {
   max-width:80%;
+  transition: all 0.3s ease 0s;
+}
+
+.pulse {
+  animation-duration: 1s;
+  animation-name: pulse;
+}
+
+@keyframes pulse {
+  0% { max-width: 80%; }
+  50%  { max-width: 100% } 
+  100%   { max-width: 80%; }
 }
