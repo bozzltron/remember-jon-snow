@@ -5,27 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#efefef">
     <link rel="stylesheet" type="text/css" href="/style.css">
-    <link rel="manifest" href="/manifest.json">
+    <!-- <link rel="manifest" href="/manifest.json"> -->
   </head>
   <body>
 
-    <div><img src="jon512x512.png" /></div>
-    <h2>Remember Jon Snow</h2>
+    <article>
+      <img src="jon512x512.png" />
+      <h2>Remember Jon Snow</h2>
+    </article>
 
     <script type="text/javascript">
 
       var clips = ['careful.mp3', 'defend_self.mp3', 'deliver_baby.mp3', 'risk_lives.mp3'];
       var index = 0;
 
-      if ('serviceWorker' in navigator) {
-        window.addEventListener('load', function() {
-          navigator.serviceWorker.register('/service-worker.js').then(function(registration) {
-            console.log('ServiceWorker registration successful with scope: ', registration.scope);
-          }, function(err) {
-            console.log('ServiceWorker registration failed: ', err);
-          });
-        });
-      }
+      // if ('serviceWorker' in navigator) {
+      //   window.addEventListener('load', function() {
+      //     navigator.serviceWorker.register('/service-worker.js').then(function(registration) {
+      //       console.log('ServiceWorker registration successful with scope: ', registration.scope);
+      //     }, function(err) {
+      //       console.log('ServiceWorker registration failed: ', err);
+      //     });
+      //   });
+      // }
 
       window.onload = function(){
         var el = document.querySelector('img');

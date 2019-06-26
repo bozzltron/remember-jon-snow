@@ -4,17 +4,19 @@ body {
   background-color:#efefef;
   display:flex;
   justify-content: center;
-  text-align:center;
-  flex-direction: column;
+  align-items: center;
+}
+
+article { 
+ text-align:center;
 }
 
 img {
   max-width:80%;
-  transition: all 0.3s ease 0s;
 }
 
 .pulse {
-  animation-duration: 1s;
+  animation-duration: 0.5s;
   animation-name: pulse;
 }
 
