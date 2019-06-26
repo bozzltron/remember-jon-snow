@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#efefef">
     <link rel="stylesheet" type="text/css" href="/style.css">
+    <!-- PWA Manfest  -->
     <link rel="manifest" href="/manifest.json">
+    <!-- PWA Manfest  -->
   </head>
   <body>
 
@@ -19,6 +21,7 @@
       var clips = ['careful.mp3', 'defend_self.mp3', 'deliver_baby.mp3', 'risk_lives.mp3'];
       var index = 0;
 
+      // PWA service worker start
       if ('serviceWorker' in navigator) {
         window.addEventListener('load', function() {
           navigator.serviceWorker.register('/service-worker.js').then(function(registration) {
@@ -28,6 +31,7 @@
           });
         });
       }
+      // PWA service worker end
 
       window.onload = function(){
         var el = document.querySelector('img');
